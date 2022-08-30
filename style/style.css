@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: wheat;
+}
+.conteiner1{
+    margin-left: 100px;
+    width: 110px;
+    height: 50px;
+    background: red;
+    transition-duration:  2s;
+    transition-timing-function: ease-out;
+    margin-bottom: 100px;
+} 
+.conteiner1 h2{
+    color: red;
+    background: red;
+    transition-duration:  3s;
+}
+.conteiner1:hover h2{
+    color: white;
+    text-shadow: 10px 10px 5px  blue;
+    margin-left: 150px;
+    padding-top: 10px;
+}
+.conteiner1:hover{
+    width: 300px;
+}
+.conteiner2{
+    margin-left: 100px;
+    width: 200px;
+    height: 200px;
+    background: lightblue;
+    margin-bottom: 100px;
+}
+.conteiner2 h2{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+}
+.conteiner2 .child2{
+    position: absolute;
+    top: 150px;
+    background:  blue;
+    width: 200px;
+    height: 100px;
+    transition-duration:  1s;
+}
+.conteiner2:hover .child2{
+    transform: translatey(100%);
+}
+.container3{
+    margin-left: 100px;
+    width: 200px;
+    height: 200px;
+    background: violet;
+    margin-bottom: 100px;
+}
+.container3 .child3{
+    width: 50px;
+    height: 50px;
+    background: darkcyan;
+}
+.container3:hover .child3{
+    animation: round300 3s infinite;
+}
+.container3 .child3 .baby{
+    width: 12.5px;
+    height: 12.5px;
+    background: lightcyan;
+    border-radius: 50%;
+}
+.container3:hover .child3 .baby{
+    animation: round300 3s infinite;
+}
+@keyframes round300{
+0%{
+    transform: translateX(0);
+    
+}    
+25%{
+    transform: translateY(300%) rotate(90deg);   
+}
+50%{
+    transform: translatex(300%) translateY(300%) rotate(180deg); 
+}
+75%{
+    transform: translateY(0%) translateX(300%) rotate(270deg);
+}
+100%{
+    transform: translateX(0%) rotate(360deg);
+}
+}
+.container4{
+    width: 300px;
+    height: 500px;
+    background: blue;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    border: solid 5px black;
+}
+.container4 .child1{
+    margin-left: 30px;
+    width: 50px;
+    height: 10px;
+    background: black; 
+}
+.container4:hover .child1{
+    animation: tennis1 10s infinite;
+}
+.container4 .child2{
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    margin-left: 45px;
+}
+.container4:hover .child2{
+    animation: tennis2 10s ease-out infinite;
+}
+.container4 .child3{
+    margin-left: 30px;
+    margin-top: 451px;
+    width: 50px;
+    height: 10px;
+    background: black;
+}
+.container4:hover .child3{
+    animation: tannis3 10s  infinite;
+}
+@keyframes tennis1{
+0%{
+    transform: translatex(0);
+}
+10%{
+    transform: translatex(0);
+}
+20%{
+    transform: translatex(190px);
+}
+30%{
+    transform: translateX(190px);
+}
+40%{
+    transform: translateX(-30px);
+}
+50%{
+    transform: translateX(-30px);
+}
+64%{
+    transform: translateX(160px);
+}
+74%{
+    transform: translateX(160px);
+}
+82%{
+    transform: translateX(200px);
+}
+90%{
+    transform: translateX(200px);
+}
+100%{
+    transform: translatex(0);
+}
+}
+
+
+@keyframes tennis2{
+0%{
+    transform: translateX(0);
+}
+10%{
+    transform: translateY(460px) translateX(80px);
+}
+20%{
+    transform: translatey(0) translateX(190px);
+}
+30%{
+    transform: translateY(460px) translateX(-30px);
+}
+40%{
+    transform: translateY(0) translateX(-30px);
+}
+50%{
+    transform: translateY(460px) translateX(130px);
+}
+54%{
+    transform: translateY(330px) translateX(240px) ;
+    transition: .5s linear;
+}
+61%{
+    transform: translateY(0) translateX(160px);
+}
+74%{
+    transform: translateY(450px) translateX(-30px);
+}
+82%{
+    transform: translateY(0) translateX(200px);
+}
+90%{
+    transform: translateY(450px) translateX(170px);
+}
+100%{
+    transform: translateX(0);
+}
+}
+
+
+
+@keyframes tannis3{
+0%{
+    transform: translate(0);
+}
+10%{
+    transform: translateX(80px);
+}
+20%{
+    transform: translateX(80px);
+}
+30%{
+    transform: translateX(-30px);
+}
+40%{
+    transform: translateX(-30px);
+}
+50%{
+    transform: translateX(130px);
+}
+64%{
+    transform: translateX(130px);
+}
+74%{
+    transform: translateX(-30px);
+}
+80%{
+    transform: translateX(-30px);
+}
+90%{
+    transform: translateX(170px);
+}
+100%{
+    transform: translateX(0);
+}
+}
